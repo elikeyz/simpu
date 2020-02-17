@@ -1,0 +1,17 @@
+main {
+    height: 100%;
+    display: flex;
+}
+
+.side-nav {
+    height: 100%;
+    background-color: #F6FAFD;
+    width: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-nav a {
+    margin: 29px 0 0;
+}
