@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/conversations.css">
     <title>Simpu</title>
 </head>
 <body>
@@ -42,38 +43,114 @@
         <section class="main-content">
             <h1>Conversations</h1>
             <div class="columns">
-                <aside class="left-column-head">
-                    <nav class="conversations-nav">
-                        <a href="#" class="conversation-navlink active-navlink">Open</a>
-                        <a href="#" class="conversation-navlink">Archived</a>
-                        <a href="#" class="conversation-navlink">Snoozed</a>
-                        <a href="#" class="conversation-navlink">Trash</a>
-                    </nav>
+                <aside class="left-column">
+                    <div class="left-column-head">
+                        <nav class="conversations-nav">
+                            <a href="#" class="conversation-navlink active-navlink">Open</a>
+                            <a href="#" class="conversation-navlink">Archived</a>
+                            <a href="#" class="conversation-navlink">Snoozed</a>
+                            <a href="#" class="conversation-navlink">Trash</a>
+                        </nav>
+                    </div>
+                    <div class="left-column-body">
+                        <article class="conversation">
+                            <div class="conversation-avatar">
+                                <img src="images/social-icon.svg" alt="Twitter icon">
+                            </div>
+                            <div class="conversation-body">
+                                <h2 class="conversation-heading">Zarela Reed</h2>
+                                <p class="conversation-title">Used Electronic Test Equipment Not Wor...</p>
+                                <p class="conversation-snippet">Hello guys, I have been unable to make use of</p>
+                            </div>
+                            <div class="conversation-extra">
+                                <p class="conversation-time">19hrs</p>
+                                <div class="conversation-count-container">
+                                    <p class="conversation-count">2</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="conversation">
+                            <div class="conversation-avatar-facebook-container">
+                                <p class="conversation-avatar-img" aria-label="Facebook Messenger Icon"><i class="fab fa-facebook-messenger"></i></p>
+                            </div>
+                            <div class="conversation-body">
+                                <h2 class="conversation-heading">Ava Gregoraci</h2>
+                                <p class="conversation-title">Used Electronic Test Equipment Not Wor...</p>
+                                <p class="conversation-snippet">Hello guys, I have been unable to make use of</p>
+                            </div>
+                            <div class="conversation-extra">
+                                <p class="conversation-time">23hrs</p>
+                                <img class="conversation-attach" src="images/attachment.svg" alt="Attachment icon">
+                            </div>
+                        </article>
+                        <article class="conversation">
+                            <p class="conversation-avatar-telegram" aria-label="Telegram icon">
+                                <i class="fab fa-telegram"></i>
+                            </p>
+                            <div class="conversation-body">
+                                <h2 class="conversation-heading">Iruka Akuchi</h2>
+                                <p class="conversation-title">Used Electronic Test Equipment Not Wor...</p>
+                                <p class="conversation-snippet">Hello guys, I have been unable to make use of</p>
+                            </div>
+                            <div class="conversation-extra">
+                                <p class="conversation-time">Jan 1</p>
+                                <img class="conversation-attach" src="images/attachment.svg" alt="Attachment icon">
+                            </div>
+                        </article>
+                        <article class="conversation">
+                            <div class="conversation-avatar">
+                                <img src="images/whats-app-copy.svg" alt="Whatsapp icon">
+                            </div>
+                            <div class="conversation-body">
+                                <h2 class="conversation-heading">Charles Davies</h2>
+                                <p class="conversation-title">Used Electronic Test Equipment Not Wor...</p>
+                                <p class="conversation-snippet">Hello guys, I have been unable to make use of</p>
+                            </div>
+                            <div class="conversation-extra">
+                                <p class="conversation-time">Jan 1</p>
+                            </div>
+                        </article>
+                        <article class="conversation">
+                            <div class="conversation-avatar">
+                                <img src="images/apple-copy.svg" alt="Apple icon">
+                            </div>
+                            <div class="conversation-body">
+                                <h2 class="conversation-heading">Kari Granleese</h2>
+                                <p class="conversation-title">Used Electronic Test Equipment Not Wor...</p>
+                                <p class="conversation-snippet">Hello guys, I have been unable to make use of</p>
+                            </div>
+                            <div class="conversation-extra">
+                                <p class="conversation-time">Jan 1</p>
+                            </div>
+                        </article>
+                    </div>
                 </aside>
-                <div class="right-column-head">
-                    <nav class="left-navlinks">
-                        <a href="#"><img src="images/time.svg" alt="Time icon"></a>
-                        <a href="#"><img src="images/trash.svg" alt="Trash icon"></a>
-                        <a href="#"><img src="images/archive.svg" alt="Archive icon"></a>
-                        <a href="#"><img src="images/more.svg" alt="More icon"></a>
-                    </nav>
-                    <nav class="right-navlinks">
-                        <div class="avatar-preview-container">
-                            <div class="tiny-avatar-container left-tiny-avatar">
-                                <img class="tiny-avatar" src="images/user1.jpg" alt="Avatar icon">
+                <div class="right-column">
+                    <div class="right-column-head">
+                        <nav class="left-navlinks">
+                            <a href="#"><img src="images/time.svg" alt="Time icon"></a>
+                            <a href="#"><img src="images/trash.svg" alt="Trash icon"></a>
+                            <a href="#"><img src="images/archive.svg" alt="Archive icon"></a>
+                            <a href="#"><img src="images/more.svg" alt="More icon"></a>
+                        </nav>
+                        <nav class="right-navlinks">
+                            <div class="avatar-preview-container">
+                                <div class="tiny-avatar-container left-tiny-avatar">
+                                    <img class="tiny-avatar" src="images/user1.jpg" alt="Avatar icon">
+                                </div>
+                                <div class="tiny-avatar-container center-tiny-avatar">
+                                    <img class="tiny-avatar" src="images/user2.jpg" alt="Avatar icon">
+                                </div>
+                                <div class="tiny-avatar-container right-tiny-avatar">
+                                    <img class="tiny-avatar" src="images/user3.jpg" alt="Avatar icon">
+                                </div>
                             </div>
-                            <div class="tiny-avatar-container center-tiny-avatar">
-                                <img class="tiny-avatar" src="images/user2.jpg" alt="Avatar icon">
+                            <button class="avatar-button">Assign</button>
+                            <div class="avatar-container">
+                                <img src="images/avatar.png" alt="Avatar">
                             </div>
-                            <div class="tiny-avatar-container right-tiny-avatar">
-                                <img class="tiny-avatar" src="images/user3.jpg" alt="Avatar icon">
-                            </div>
-                        </div>
-                        <button class="avatar-button">Assign</button>
-                        <div class="avatar-container">
-                            <img src="images/avatar.png" alt="Avatar">
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </section>

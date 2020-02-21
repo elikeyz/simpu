@@ -8,6 +8,7 @@
 
 .columns {
     display: flex;
+    height: 100%;
 }
 
 .columns a:focus {
@@ -16,16 +17,27 @@
     border-radius: 2px;
 }
 
-.left-column-head {
+.left-column {
     width: 25%;
     border: 0.7px solid #E9EDF0;
+    height: 100%;
+}
+
+.left-column-head {
+    border-bottom: 0.7px solid #E9EDF0;
     padding: 10px 21px;
     font-size: 0.9em;
+    height: 40px;
+}
+
+.right-column {
+    width: 75%;
+    border: 0.7px solid #E9EDF0;
+    height: 100%;
 }
 
 .right-column-head {
-    width: 75%;
-    border: 0.7px solid #E9EDF0;
+    border-bottom: 0.7px solid #E9EDF0;
     padding: 15px 21px;
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,112 @@
+.columns-body {
+    display: flex;
+    height: 100%;
+}
+
+.left-column-body {
+    padding: 10px 21px;
+}
+
+.center-column {
+    width: 75%;
+    border: 0.7px solid #E9EDF0;
+    padding: 10px 25px;
+    height: 100%;
+}
+
+.right-column-body {
+    width: 25%;
+    border: 0.7px solid #E9EDF0;
+    padding: 15px 7px;
+    height: 100%;
+}
+
+.conversation {
+    display: flex;
+    border-bottom: 0.9px solid #E9EDF0;
+    padding: 10px 0;
+}
+
+.conversation-avatar {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px 0 0;
+}
+
+.conversation-body {
+    width: calc(100% - 49px);
+}
+
+.conversation-extra {
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.conversation-heading {
+    font-size: 1em;
+    margin: 0;
+    color: #212242;
+}
+
+.conversation-title {
+    font-size: 0.9em;
+    color: #212242;
+    margin: 5px 0;
+}
+
+.conversation-snippet {
+    font-size: 0.8em;
+    color: #595E8A;
+    margin: 1px 0;
+}
+
+.conversation-time {
+    font-size: 0.6em;
+    color: #5E6C84;
+    margin: 0;
+}
+
+.conversation-count-container {
+    width: 15px;
+    height: 15px;
+    background-color: #6554C0;
+    border: 1px solid #6554C0;
+    border-radius: 50%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.6em;
+    color: #FEFFFF;
+}
+
+.conversation-count {
+    margin: 1px 0 0 0;
+}
+
+.conversation-avatar-facebook-container {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #0084FF;
+    background-color: #0084FF;
+    border-radius: 50%;
+    margin: 0 5px 0 0;
+}
+
+.conversation-avatar-img {
+    font-size: 10px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.conversation-avatar-telegram {
+    font-size: 25px;
+    margin: 0 5px 0 0;
+    color: #2DA4D7;
+}
+
+.conversation-attach {
+    margin-top: 10px;
+}
