@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/10d4f1332d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/nav.css">
@@ -13,33 +14,68 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/logo.svg">
+            <a href="#" class="logo-link"><img src="images/logo.svg" alt="Simpu logo"></a>
         </div>
         <div class="header-nametag">
             <div class="letter-oval">
                 <p>S</p>
             </div>
             <p class="org-name">Organisation Name</p>
-            <a href="#" class="dropdown-arrow"><span><i class="fas fa-chevron-down"></i></span></a>
+            <a href="#" class="dropdown-arrow"><span aria-label="Down arrow"><i class="fas fa-chevron-down"></i></span></a>
         </div>
     </header>
     <main>
         <nav class="side-nav">
             <a href="#">
-                <img src="images/analytics.svg">
+                <img src="images/analytics.svg" alt="Analytics logo">
             </a>
             <a href="#">
-                <img src="images/happy.svg">
+                <img src="images/happy.svg" alt="Happy logo">
             </a>
             <a href="#">
-                <img src="images/schedule.svg">
+                <img src="images/schedule.svg" alt="Schedule logo">
             </a>
             <a href="#">
-                <img src="images/comment.svg">
+                <img src="images/comment.svg" alt="Comment logo">
             </a>
         </nav>
         <section class="main-content">
             <h1>Conversations</h1>
+            <div class="columns">
+                <aside class="left-column-head">
+                    <nav class="conversations-nav">
+                        <a href="#" class="conversation-navlink active-navlink">Open</a>
+                        <a href="#" class="conversation-navlink">Archived</a>
+                        <a href="#" class="conversation-navlink">Snoozed</a>
+                        <a href="#" class="conversation-navlink">Trash</a>
+                    </nav>
+                </aside>
+                <div class="right-column-head">
+                    <nav class="left-navlinks">
+                        <a href="#"><img src="images/time.svg" alt="Time icon"></a>
+                        <a href="#"><img src="images/trash.svg" alt="Trash icon"></a>
+                        <a href="#"><img src="images/archive.svg" alt="Archive icon"></a>
+                        <a href="#"><img src="images/more.svg" alt="More icon"></a>
+                    </nav>
+                    <nav class="right-navlinks">
+                        <div class="avatar-preview-container">
+                            <div class="tiny-avatar-container left-tiny-avatar">
+                                <img class="tiny-avatar" src="images/user1.jpg" alt="Avatar icon">
+                            </div>
+                            <div class="tiny-avatar-container center-tiny-avatar">
+                                <img class="tiny-avatar" src="images/user2.jpg" alt="Avatar icon">
+                            </div>
+                            <div class="tiny-avatar-container right-tiny-avatar">
+                                <img class="tiny-avatar" src="images/user3.jpg" alt="Avatar icon">
+                            </div>
+                        </div>
+                        <button class="avatar-button">Assign</button>
+                        <div class="avatar-container">
+                            <img src="images/avatar.png" alt="Avatar">
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </section>
     </main>
 </body>
