@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/dashboard.css">
     <link rel="stylesheet" href="styles/conversations.css">
+    <link rel="stylesheet" href="styles/chats.css">
     <title>Simpu</title>
 </head>
 <body>
@@ -42,8 +43,14 @@
         </nav>
         <section class="main-content">
             <h1>Conversations</h1>
+            <div class="menu-btn" id="menu-btn" role="button" tabindex="0">
+                <p><i class="fas fa-bars"></i></p>
+            </div>
+            <div class="back-btn" id="back-btn" role="button" tabindex="0">
+                <p><i class="fas fa-arrow-left"></i></p>
+            </div>
             <div class="columns">
-                <aside class="left-column">
+                <aside class="left-column" id="left-column">
                     <div class="left-column-head">
                         <nav class="conversations-nav">
                             <a href="#" class="conversation-navlink active-navlink">Open</a>
@@ -53,7 +60,7 @@
                         </nav>
                     </div>
                     <div class="left-column-body">
-                        <article class="conversation">
+                        <article class="conversation" tabindex="0">
                             <div class="conversation-avatar">
                                 <img src="images/social-icon.svg" alt="Twitter icon">
                             </div>
@@ -69,7 +76,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="conversation">
+                        <article class="conversation" tabindex="0">
                             <div class="conversation-avatar-facebook-container">
                                 <p class="conversation-avatar-img" aria-label="Facebook Messenger Icon"><i class="fab fa-facebook-messenger"></i></p>
                             </div>
@@ -83,7 +90,7 @@
                                 <img class="conversation-attach" src="images/attachment.svg" alt="Attachment icon">
                             </div>
                         </article>
-                        <article class="conversation">
+                        <article class="conversation" tabindex="0">
                             <p class="conversation-avatar-telegram" aria-label="Telegram icon">
                                 <i class="fab fa-telegram"></i>
                             </p>
@@ -97,7 +104,7 @@
                                 <img class="conversation-attach" src="images/attachment.svg" alt="Attachment icon">
                             </div>
                         </article>
-                        <article class="conversation">
+                        <article class="conversation" tabindex="0">
                             <div class="conversation-avatar">
                                 <img src="images/whats-app-copy.svg" alt="Whatsapp icon">
                             </div>
@@ -110,7 +117,7 @@
                                 <p class="conversation-time">Jan 1</p>
                             </div>
                         </article>
-                        <article class="conversation">
+                        <article class="conversation" tabindex="0">
                             <div class="conversation-avatar">
                                 <img src="images/apple-copy.svg" alt="Apple icon">
                             </div>
@@ -125,7 +132,7 @@
                         </article>
                     </div>
                 </aside>
-                <div class="right-column">
+                <div class="right-column" id="right-column">
                     <div class="right-column-head">
                         <nav class="left-navlinks">
                             <a href="#"><img src="images/time.svg" alt="Time icon"></a>
@@ -151,9 +158,53 @@
                             </div>
                         </nav>
                     </div>
+                    <div class="right-column-body">
+                        <section class="chats-body">
+                            <h2>WhatsApp For Business: Don't forget to start your free trial</h2>
+                            <article class="chat">
+                                <div class="chat-head">
+                                    <h3>Zarela Reed</h3>
+                                    <div class="chat-reply" role="button" tabindex="0">
+                                        <img src="images/reply.svg" alt="Reply logo">
+                                        <p>Reply this conversation</p>
+                                    </div>
+                                </div>
+                                <div class="chat-body-other">
+                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                </div>
+                                <p class="chat-time">12:59 PM</p>
+                            </article>
+                            <article class="chat">
+                                <div class="chat-head">
+                                    <h3>Collins Iheagwara</h3>
+                                </div>
+                                <div class="chat-body-me">
+                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                </div>
+                                <p class="chat-time">12:59 PM <span class="chat-check"><i class="fas fa-check-double"></i></span></p>
+                            </article>
+                            <article class="chat">
+                                <div class="chat-head">
+                                    <h3>Collins Iheagwara</h3>
+                                </div>
+                                <div class="chat-body-me">
+                                    <p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. It’s always the same thing, by the time they have their third child they have it all figured out, but with number one it’s a learning thing.</p>
+                                </div>
+                                <p class="chat-time">02:00 PM <span class="chat-check"><i class="fas fa-check-double"></i></span></p>
+                            </article>
+                            <form class="chat-form">
+                                <textarea class="chat-input" placeholder="Type a message..."></textarea>
+                                <div class="attach-btn" role="button" tabindex="0">
+                                    <img src="images/attachment.svg" alt="Attachment logo">
+                                </div>
+                            </form>
+                        </section>
+                        <section class="comments-body"></section>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>

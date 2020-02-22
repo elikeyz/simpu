@@ -7,24 +7,16 @@
     padding: 10px 21px;
 }
 
-.center-column {
-    width: 75%;
-    border: 0.7px solid #E9EDF0;
-    padding: 10px 25px;
-    height: 100%;
-}
-
-.right-column-body {
-    width: 25%;
-    border: 0.7px solid #E9EDF0;
-    padding: 15px 7px;
-    height: 100%;
-}
-
 .conversation {
     display: flex;
     border-bottom: 0.9px solid #E9EDF0;
     padding: 10px 0;
+}
+
+.conversation:focus {
+    outline: none;
+    border: 1px solid #6554C0;
+    border-radius: 2px;
 }
 
 .conversation-avatar {
