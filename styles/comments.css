@@ -1,9 +1,25 @@
 .comments-body {
+    display: block;
     height: 100%;
     width: 277px;
     padding: 10px 10px 90px;
     overflow-y: auto;
     position: relative;
+}
+
+.close-icon {
+    display: none;
+    float: right;
+    margin: 0;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #212242;
+}
+
+.close-icon:focus {
+    outline: none;
+    border: 1px solid #212242;
+    border-radius: 2px;
 }
 
 .comments-body h2 {
@@ -92,4 +108,16 @@
     font-size: 13px;
     margin: 4px 0;
     text-align: center;
+}
+
+.sr-label {
+    display: none;
+}
+
+@media only screen and (max-width: 670px) {
+    .comments-body {
+        display: none;
+        width: 100%;
+        padding: 10px 25px 90px;
+    }
 }

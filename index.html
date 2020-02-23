@@ -160,7 +160,10 @@
                         </nav>
                     </div>
                     <div class="right-column-body">
-                        <section class="chats-body">
+                        <section id="chats-body" class="chats-body">
+                            <p id="comments-btn" class="comments-icon" role="button" tabindex="0" aria-label="Open Comments">
+                                <i class="fas fa-comments"></i>
+                            </p>
                             <h2>WhatsApp For Business: Don't forget to start your free trial</h2>
                             <article class="chat">
                                 <div class="chat-head">
@@ -194,13 +197,17 @@
                                 <p class="chat-time">02:00 PM <span class="chat-check"><i class="fas fa-check-double"></i></span></p>
                             </article>
                             <form class="chat-form">
-                                <textarea class="chat-input" placeholder="Type a message..."></textarea>
+                                <label for="chat-input" class="sr-label">Type a message</label>
+                                <textarea id="chat-input" class="chat-input" placeholder="Type a message..."></textarea>
                                 <div class="attach-btn" role="button" tabindex="0">
                                     <img src="images/attachment.svg" alt="Attachment logo">
                                 </div>
                             </form>
                         </section>
-                        <section class="comments-body">
+                        <section id="comments-body" class="comments-body">
+                            <p id="close-btn" class="close-icon" role="button" tabindex="0" aria-label="Close Comments">
+                                <i class="fas fa-times"></i>
+                            </p>
                             <h2>Comments</h2>
                             <article class="comment">
                                 <div class="comment-avatar-container">
@@ -246,7 +253,8 @@
                                 <div class="comment-avatar-container">
                                     <img src="images/user3.jpg" alt="User avatar" class="comment-avatar">
                                 </div>
-                                <input type="text" class="comment-input" placeholder="Write your comment...">
+                                <label for="comment-input" class="sr-label">Write your comment</label>
+                                <input id="comment-input" type="text" class="comment-input" placeholder="Write your comment...">
                                 <div role="button" tabindex="0" class="comment-btn" aria-label="Submit Comment">
                                     <p class="comment-btn-telegram-icon" aria-label="Telegram icon">
                                         <i class="fab fa-telegram-plane"></i>
