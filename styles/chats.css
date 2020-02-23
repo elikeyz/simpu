@@ -132,11 +132,6 @@
     width: 100%;
 }
 
-.comments-body {
-    height: 100%;
-    width: 277px;
-}
-
 @media only screen and (max-width: 670px) {
     
 }

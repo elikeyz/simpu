@@ -80,6 +80,7 @@
     border-bottom: 0.7px solid #E9EDF0;
     padding: 15px 21px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -187,5 +188,16 @@
 
     .left-column {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .right-column-head {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .left-navlinks, .right-navlinks {
+        margin: 5px 0;
     }
 }
